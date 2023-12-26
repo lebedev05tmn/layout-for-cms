@@ -7,7 +7,35 @@
     <title>CMS</title>
   </head>
   <body>
-    <header></header>
+    <header class="page-header">
+      <div class="wrapper">
+        <div class="main-header-wrapper">
+          <div class="main-header-logo-wrapper">
+            <img src="img/logo.svg" alt="Логотип" />
+          </div>
+          <nav class="main-nav">
+            <div class="menu-primary-container">
+              <ul class="menu">
+                <li class="menu-item menu-item-has-children">
+                  <a href="#">Наши проекты</a>
+                  <ul class="sub-menu">
+                    <li class="menu-item"><a href="#">Tomazzi Hall</a></li>
+                    <li class="menu-item"><a href="#">Lounge Hall</a></li>
+                    <li class="menu-item"><a href="#">Astra Hall</a></li>
+                  </ul>
+                </li>
+                <li class="menu-item current-menu-item">
+                  <a href="#">Контакты</a>
+                </li>
+                <li class="menu-item menu-item-styled">
+                  <a href="#feedback">Оставить отзыв</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
     <main class="page-main">
       <section class="main-area">
         <div class="wrapper">
@@ -17,14 +45,15 @@
             <h3>Дизайн общественных интерьеров</h3>
             <h2>Кейс клубного дома Tomazzi Hall</h2>
             <h3>Кейс клубного дома Tomazzi Hall</h3>
-            <p>
+            <div class="wysiwig-text">
               <span
                 >Создать объект, подобного которому в Санкт-Петербурге еще не
-                было, — такую задачу поставил перед собой девелопер Interior
-                Lounge, продумывая клубный дом Tomazzi Hall. Над экстерьером
-                комплекса работала команда одного из крупнейших архитектурных
-                Бюро России — «Студия 11» разработал концепцию, а мы оформили
-                интерьер 10 парадных и 3 лаунж-зон.
+                было, — такую задачу поставил перед собой девелопер
+                <b>Interior Lounge</b>, продумывая клубный дом
+                <u>Tomazzi Hall</u>. Над экстерьером комплекса работала команда
+                одного из крупнейших архитектурных Бюро России — «Студия 11»
+                разработал концепцию, а мы оформили интерьер 10 парадных и 3
+                лаунж-зон.
               </span>
               <span>
                 Заказчик знал команду, следил за нашей деятельностью, поэтому
@@ -32,7 +61,7 @@
                 лаунж-зон нам. Основными моментами, на которые мы
                 оринтировались, стали:
               </span>
-            </p>
+            </div>
             <ul>
               <li>
                 Источники вдохновения планировалось искать в строгой геометрии,
@@ -48,7 +77,7 @@
               </li>
             </ul>
             <h3>Начало работы и источники вдохновения</h3>
-            <div>
+            <div class="wysiwig-start">
               <p>
                 Над экстерьером комплекса работала команда одного из крупнейших
                 архитектурных бюро России — «Студия 11», а мы оформили интерьер
@@ -68,7 +97,48 @@
           </div>
         </div>
       </section>
-      <section class="feedback">
+      <section class="order">
+        <div class="wrapper">
+          <div class="order-wrapper">
+            <h3 class="order-title">Оставить отзыв</h3>
+            <div class="order-form">
+              <div class="wpcf7">
+                <form action="" class="wpcf7-form">
+                  <p>
+                    <span class="wpcf7-form-control-wrap">
+                      <textarea
+                        class="wpcf7-textarea"
+                        cols="40"
+                        rows="10"
+                        placeholder="Расскажите, что вы думаете о проекте"></textarea>
+                    </span>
+                  </p>
+                  <p>
+                    <span class="wpcf7-form-control-wrap">
+                      <input
+                        type="text"
+                        size="40"
+                        class="wpcf7-text"
+                        placeholder="Ваше имя" />
+                    </span>
+                  </p>
+                  <p>
+                    <input
+                      type="submit"
+                      value="Отправить"
+                      class="wpcf7-submit" />
+                    <span class="ajax-loader"></span>
+                  </p>
+                  <div class="order-text">
+                    Отзыв будет добавлен после проверки модератором
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="feedback" id="feedback">
         <div class="wrapper">
           <div class="feedback-wrapper">
             <div class="feedback-item">
